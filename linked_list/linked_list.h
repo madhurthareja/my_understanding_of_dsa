@@ -31,3 +31,4 @@ void printList(LIST list);
 void insertFirst(NODE n1, LIST l1);
 void insertEnd(NODE n1, LIST l1);
 void deleteFirst(LIST l1);
+void deleteEnd(LIST l1);

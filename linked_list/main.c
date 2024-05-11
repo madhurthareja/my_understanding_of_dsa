@@ -33,6 +33,7 @@ int main(){
 	insertFirst(n10,l1);
 
 	//printing the list
+	printf("The list is: \n");
 	printList(l1);
 
 	//inserting a new node at the end of the list
@@ -40,6 +41,21 @@ int main(){
 	insertEnd(n11,l1);
 
 	//checking if the node is inserted at the end
+	printf("The list after inserting at the end is: \n");
+	printList(l1);
+
+	//removing the first node
+	deleteFirst(l1);
+
+	//checking if the first node is removed
+	printf("The list after removing the first node is: \n");
+	printList(l1);
+
+	//removing the last node
+	deleteEnd(l1);
+
+	//checking if the last node is removed
+	printf("The list after removing the last node is: \n");
 	printList(l1);
 }
 

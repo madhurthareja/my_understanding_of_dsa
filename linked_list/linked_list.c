@@ -50,6 +50,36 @@ void insertEnd(NODE newNode, LIST myList){
 	return;
 }
 
+void deleteFirst(LIST myList){
+	if(myList->head==NULL){
+		printf("List is empty\n");
+	}
+	else{
+		NODE temp=myList->head;
+		myList->head=temp->next;
+		free(temp);
+		myList->count--;
+	}
+	return;
+}
+
+void deleteEnd(LIST myList){
+	if(myList->head==NULL){
+		printf("List is empty\n");
+	}
+	else{
+		NODE temp=myList->head;
+		NODE prev=temp;
+		while(temp->next!=NULL){
+			prev=temp;
+			temp=temp->next;
+		}
+		prev->next=NULL;
+		free(temp);
+		myList->count--;
+	}
+	return;
+}
 
 void printList(LIST myList){
 	NODE temp=myList->head;
