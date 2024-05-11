@@ -5,13 +5,13 @@ This repository contains my implementation of various data structures and algori
 
 ## Data Structures
 1. **Linked List**: Implementation of a singly linked list in C.
-   - [Code](linked_list.c)
+   - [Code](linked_list)
 2. **Stack**: Implementation of a stack data structure using an array in C.
-   - [Code](stack.c)
+   - [Code](stack)
 3. **Queue**: Implementation of a queue data structure using a linked list in C.
-   - [Code](queue.c)
+   - [Code](queue)
 4. **Binary Search Tree (BST)**: Implementation of a binary search tree in C.
-   - [Code](binary_search_tree.c)
+   - [Code](binary_search_tree)
 
 ## Algorithms
 1. **Search Algorithms**:
