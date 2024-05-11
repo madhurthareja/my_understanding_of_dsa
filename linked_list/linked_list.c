@@ -32,6 +32,25 @@ void insertFirst(NODE newNode, LIST myList){
 	return;
 }
 
+void insertEnd(NODE newNode, LIST myList){
+	if(myList->head==NULL){
+		myList->head=newNode;
+		myList->count++;
+		newNode->next=NULL;
+	}
+	else{
+		NODE temp=myList->head;
+		while(temp->next!=NULL){
+			temp=temp->next;
+		}
+		temp->next=newNode;
+		newNode->next=NULL;
+		myList->count++;
+	}
+	return;
+}
+
+
 void printList(LIST myList){
 	NODE temp=myList->head;
 	printf("[HEAD] -> ");

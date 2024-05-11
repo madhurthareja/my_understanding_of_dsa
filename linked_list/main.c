@@ -34,5 +34,12 @@ int main(){
 
 	//printing the list
 	printList(l1);
+
+	//inserting a new node at the end of the list
+	NODE n11=createNewNode(110);
+	insertEnd(n11,l1);
+
+	//checking if the node is inserted at the end
+	printList(l1);
 }
 
